@@ -22,9 +22,13 @@ abstract: "Et kort sammendrag, en til to avsnitt."
 
 ## Introduksjon
 
-Hva handler artikkelen om? Hva blir diskutert? Hvorfor er dette viktig?
+Vitenskapelig fremgang er basert på pålitelige oppdagelser, samt tillit som bygges gjennom reproduserbarhet. Likevel har rapporter nylig oppdaget at en urovekkende andel av fagfellevurderte studier ikke lar seg reprodusere [@mcnutt2014].
 
-## Litteraturgjennomgang
+Denne artikkelen handler om utfordringene knyttet til replikerbarhet og reproduserbarhet, samt metoder som kan bidra til å løse replikasjonskrisen. Artikkelen skiller mellom tre måter å bruke reproduserbarhet på - metoders reproduserbarhet, resultatenes reproduserbarhet og generaliserbarhet [@goodman2016b]. Det blir også diskutert ulike årsaker til problemet med funn som ikke er reproduserbare.
+
+Det er viktig å ha kunnskap om dette ettersom falske positiver sløser ressurser, føre til uhensiktsmessig policy og svekker troverdigheten til vitenskapen [@simmons2011].
+
+## Litteraturgjennomgang 
 
 Smarte synspunkt om emnet fra andre.
 
