@@ -30,6 +30,14 @@ Det er viktig å ha kunnskap om dette ettersom falske positiver sløser ressurse
 
 ## Litteraturgjennomgang 
 
+Robust og pålitelig vitenskap er fundamentet for utviklingen og fremgangen i vitenskapen. På grunn av en viss forvirring rundt begrepene har National Science Foundation (NSF) definert "robust og pålitelig vitenskap" gjennom tre begreper - reproduserbarhet, replikerbarhet og generaliserbarhet .
+
+Reproduserbarhet er evnen til å duplisere resultater ved bruk av samme data og prosedyrer.
+
+Replikrbarhet innebærer at man oppnå samme konklusjon og resultat ved å bruke samme prosedyrer, men med nye data. Dette regnes som den vitenskaplige gullstandardsen [@jasny2011b].
+
+Generaliserbarhet vil si å gjøre studien i en ny sammenheng. Ved bruk av en annen type data, men får det samme resultatet.
+
 Smarte synspunkt om emnet fra andre.
 
 Bruk minst 20 siteringer. Minst 5 må være nye relevante artikler om emnet som du har funnet selv.
