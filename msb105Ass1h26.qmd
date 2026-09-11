@@ -22,21 +22,21 @@ abstract: "Et kort sammendrag, en til to avsnitt."
 
 ## Introduksjon
 
-Vitenskapelig fremgang er basert på pålitelige oppdagelser, samt tillit som bygges gjennom reproduserbarhet. Likevel har rapporter nylig oppdaget at en urovekkende andel av fagfellevurderte studier ikke lar seg reprodusere [@mcnutt2014].
+Vitenskapelig fremgang er basert på pålitelige oppdagelser, samt tillit. For å kunne bygge videre på tidligere arbeid er det viktig at undersøkelser er gjennomført med høy metodisk kvalitet , og at resultatene er etterrøvbare. For å oppnå tillit til vitenskapelige konkusjoner er det å kunne gjennskape et eksperiment en viktig tilnærming. Likevel har forskningsverden blitt svekket av rapporter som nylig har oppdaget at en urovekkende andel av fagfellevurderte studier ikke lar seg reprodusere [@mcnutt2014].
 
-Denne artikkelen handler om utfordringene knyttet til replikerbarhet og reproduserbarhet, samt metoder som kan bidra til å løse replikasjonskrisen. Artikkelen skiller mellom tre måter å bruke reproduserbarhet på - metoders reproduserbarhet, resultatenes reproduserbarhet og generaliserbarhet [@goodman2016b]. Det blir også diskutert ulike årsaker til problemet med funn som ikke er reproduserbare.
+Denne artikkelen undersøker om reproduserbarhet bør være et minimimskrav for publisering [@peng2011] eller om forskningsfelleskapet må kreve full replikerbarhet. Artikkelen tar utgangspunkt i National Science Foundation (NSF) som definerer robust og pålitelig vitenskap gjennom tre begreper - reproduserbarhet, replikerbarhet og generaliserbarhet. Videre kommer @goodman2016b med en mer pressis forklaring på reproduserbarhet, ved å skille mellom metoders reproduserbarhet og resultatenes reproduserbarhet.
 
-Det er viktig å ha kunnskap om dette ettersom falske positiver sløser ressurser, føre til uhensiktsmessig policy og svekker troverdigheten til vitenskapen [@simmons2011].
+Artikkelen diskuterer utfordringene knyttet til replikerbarhet og reproduserbarhet, med publikasjonsskjeivhet og type 1-feil som hovedfokus. Det redegjøres for ulike tilnærminger som kan bidra til å håndtere og løse replikasjonskrisen. Avslutningsvis drøftes det hvordan moderne verktøy kan hjelpe til å sikre metodisk reproduserbarhet.
+
+Det er viktig å ha kunnskap om dette temaet ettersom upålitelig forskning kan få alvorlige konsekvenser. Falske positiver er kanskje den mest kostbare feilen. Falske positiver refererer til den feilaktige forkastningen av nullhypotesen. Dette fører til sløsing av ressurser, uhensiktsmessig policy og det svekker troverdigheten til vitenskapen [@simmons2011].
 
 ## Litteraturgjennomgang 
 
 Robust og pålitelig vitenskap er fundamentet for utviklingen og fremgangen i vitenskapen. På grunn av en viss forvirring rundt begrepene har National Science Foundation (NSF) definert "robust og pålitelig vitenskap" gjennom tre begreper - reproduserbarhet, replikerbarhet og generaliserbarhet .
 
-Reproduserbarhet er evnen til å duplisere resultater ved bruk av samme data og prosedyrer.
+Reproduserbarhet er evnen til å duplisere resultater ved bruk av samme data og prosedyrer. Replikrbarhet innebærer at man oppnå samme konklusjon og resultat ved å bruke samme prosedyrer, men med nye data. Dette regnes som den vitenskaplige gullstandardsen [@jasny2011b]. Generaliserbarhet vil si at resultatene av en studie gjelder i en ny sammenheng, ved bruk av data i andre kontekster eller populasjoner som skiller seg ut fra den orginale studien.
 
-Replikrbarhet innebærer at man oppnå samme konklusjon og resultat ved å bruke samme prosedyrer, men med nye data. Dette regnes som den vitenskaplige gullstandardsen [@jasny2011b].
-
-Generaliserbarhet vil si å gjøre studien i en ny sammenheng. Ved bruk av en annen type data, men får det samme resultatet.
+@goodman2016b har forsøk å definere begrepet reproduserbarhet mer presis, ved å skille mellom metoders reproduserbarhet og resultatenes reproduserbarhet. Metoders reproduserbarhet refererer til tilstrekkelig detaljert metodikk slik at de samme prosedyrene kan gjentas nøyaktig. Reproduserbarhet av resultater innebærer å oppnå like resultater fra en uavhengig studie.
 
 Smarte synspunkt om emnet fra andre.
 
