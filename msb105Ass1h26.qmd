@@ -48,6 +48,8 @@ Publikasjonsskjevhet der, sannsynligheten for at en studie publiseres er basert 
 
 Ved å benytter signifikant på 5% aksepterer forskere at 1 av 20 studier, helt tilfeldig, vil forkaste nullhypotesen og gi en Type-1 feil. Forskningsverden gjennomfører utallige studier og tester. Det som blir et problemet er at de få studiene som tilfeldigvis oppnår effekt blir publisert i litteraturen, mens studiene som viser manglene effekt blir liggende i arkuvskuffen. Dette beskrev @rosenthal1979 som "File Drawer Problem". Det gjør at literaturen fylles med skjeve utvalg, og dette forplanter seg negativt i det en kaller for metaanslyser [@young2008]
 
+@simmons2011 hevder at falske positiver er den mest kostbare feilen i forskning. Når falske positiver først dukker opp i litteraturen er det vedvarende fordi det er skjeldent at prestisjefylte tidskrifter publiserer nullfunn eller replikasjoner. I tillegg sløser falske positiver med ressurser og uhensiktsmessig policy. Dette fører til at troverdigheten rundt dette fagfeltet svekkes [@simmons2011]. For å motvirke dette har baltn annet @nosek2015 argumentert for økt bruk av forhåndsregistrering. Det vil si at forskere må begrunne sitt valg av signifikansnivå, forskningsdesign og strategier i forkant av datainnsamling.
+
 Smarte synspunkt om emnet fra andre.
 
 Bruk minst 20 siteringer. Minst 5 må være nye relevante artikler om emnet som du har funnet selv.
