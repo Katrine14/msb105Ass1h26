@@ -22,7 +22,7 @@ abstract: "Et kort sammendrag, en til to avsnitt."
 
 ## Introduksjon
 
-Vitenskapelig fremgang er basert på pålitelige oppdagelser, samt tillit. For å kunne bygge videre på tidligere arbeid er det viktig at undersøkelser er gjennomført med høy metodisk kvalitet , og at resultatene er etterrøvbare. For å oppnå tillit til vitenskapelige konkusjoner er det å kunne gjennskape et eksperiment en viktig tilnærming. Likevel har forskningsverden blitt svekket av rapporter som nylig har oppdaget at en urovekkende andel av fagfellevurderte studier ikke lar seg reprodusere [@mcnutt2014].
+Vitenskapelig fremgang er basert på pålitelige oppdagelser, samt tillit. For å kunne bygge videre på tidligere arbeid er det viktig at undersøkelser er gjennomført med høy metodisk kvalitet og at resultatene er etterrøvbare. For å oppnå tillit til vitenskapelige konkusjoner er det å kunne gjennskape et eksperiment en viktig tilnærming. Likevel har forskningsverden blitt svekket av rapporter som nylig har oppdaget at en urovekkende andel av fagfellevurderte studier ikke lar seg reprodusere [@mcnutt2014].
 
 Denne artikkelen undersøker om reproduserbarhet bør være et minimimskrav for publisering [@peng2011] eller om forskningsfelleskapet må kreve full replikerbarhet. Artikkelen tar utgangspunkt i National Science Foundation (NSF) som definerer robust og pålitelig vitenskap gjennom tre begreper - reproduserbarhet, replikerbarhet og generaliserbarhet. Videre kommer @goodman2016b med en mer pressis forklaring på reproduserbarhet, ved å skille mellom metoders reproduserbarhet og resultatenes reproduserbarhet.
 
@@ -32,11 +32,15 @@ Det er viktig å ha kunnskap om dette temaet ettersom upålitelig forskning kan 
 
 ## Litteraturgjennomgang 
 
-Robust og pålitelig vitenskap er fundamentet for utviklingen og fremgangen i vitenskapen. På grunn av en viss forvirring rundt begrepene har National Science Foundation (NSF) definert "robust og pålitelig vitenskap" gjennom tre begreper - reproduserbarhet, replikerbarhet og generaliserbarhet .
+### Teori og begreper
 
-Reproduserbarhet er evnen til å duplisere resultater ved bruk av samme data og prosedyrer. Replikrbarhet innebærer at man oppnå samme konklusjon og resultat ved å bruke samme prosedyrer, men med nye data. Dette regnes som den vitenskaplige gullstandardsen [@jasny2011b]. Generaliserbarhet vil si at resultatene av en studie gjelder i en ny sammenheng, ved bruk av data i andre kontekster eller populasjoner som skiller seg ut fra den orginale studien.
+Robust og pålitelig vitenskap er fundamentet for utviklingen og fremgangen i vitenskapen. Det har være uklarhet rundt hva begrepet faktsik innebærer. National Science Foundation (NSF) følte et behov for å definert "robust og pålitelig vitenskap" gjennom tre krav. Den må være reproduserbar, replikerbar og generaliserbar [@bollen2015].
 
-@goodman2016b har forsøk å definere begrepet reproduserbarhet mer presis, ved å skille mellom metoders reproduserbarhet og resultatenes reproduserbarhet. Metoders reproduserbarhet refererer til tilstrekkelig detaljert metodikk slik at de samme prosedyrene kan gjentas nøyaktig. Reproduserbarhet av resultater innebærer å oppnå like resultater fra en uavhengig studie.
+NSF definerer at ruserbarhet er evnen til å duplisere resultater ved bruk av samme data og prosedyrer. Replikrbarhet innebærer at man oppnå samme konklusjon og resultat ved å bruke samme prosedyrer, men med nye data. Dette regnes som den vitenskaplige gullstandardsen [@jasny2011b]. Generaliserbarhet vil si at resultatene av en studie gjelder i en ny sammenheng, ved bruk av data i annen kontekster eller populasjoner som skiller seg ut fra den orginale studien.
+
+@jasny2011b hevder at replikerbarhet regnes som den vitenskaplige gullstandarden, der reproduserbarhet anses som nødvendig men ikke tilstrekkelig forusetning for replikerbarhet. I sammenheng med beregningsvitenskap, diskuterer @peng2011 om reproduserbarhet bør være et minstekrav for pubisering.
+
+Flere har prøvd å definere begrepet reproduserbarhet mer presis. Blant annet har @goodman2016b foreslått å definere begrepet ved å skille mellom metoders reproduserbarhet og resultatenes reproduserbarhet. Metoders reproduserbarhet refererer til tilstrekkelig detaljert metodikk slik at de samme prosedyrene kan gjentas nøyaktig. Reproduserbarhet av resultater innebærer å oppnå like resultater fra en uavhengig studie. @goodman2016b knytter også dette til robusthet som refererer til stabiliteten eksperimentelle konklusjoner når man endrer forutsetninger eller prosedyrer. generaliserbarhet.
 
 Smarte synspunkt om emnet fra andre.
 
