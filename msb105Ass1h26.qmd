@@ -26,11 +26,11 @@ Vitenskapelig fremgang er basert på pålitelige oppdagelser, samt tillit. For �
 
 Denne artikkelen undersøker om reproduserbarhet bør være et minimimskrav for publisering [@peng2011] eller om forskningsfelleskapet må kreve full replikerbarhet. Artikkelen tar utgangspunkt i National Science Foundation (NSF) som definerer robust og pålitelig vitenskap gjennom tre begreper - reproduserbarhet, replikerbarhet og generaliserbarhet. Videre kommer @goodman2016b med en mer pressis forklaring på reproduserbarhet, ved å skille mellom metoders reproduserbarhet og resultatenes reproduserbarhet.
 
-Artikkelen diskuterer utfordringene knyttet til replikerbarhet og reproduserbarhet, med publikasjonsskjeivhet og type 1-feil som hovedfokus. Det redegjøres for ulike tilnærminger som kan bidra til å håndtere og løse replikasjonskrisen. Avslutningsvis drøftes det hvordan moderne verktøy kan hjelpe til å sikre metodisk reproduserbarhet.
+Artikkelen diskuterer utfordringene knyttet til replikerbarhet og reproduserbarhet, med publikasjonsskjeivhet og type 1-feil (falske positiver) som hovedfokus. Det redegjøres for ulike tilnærminger som kan bidra til å håndtere og løse replikasjonskrisen. Avslutningsvis drøftes det hvordan moderne verktøy kan hjelpe til å sikre metodisk reproduserbarhet.
 
 Det er viktig å ha kunnskap om dette temaet ettersom upålitelig forskning kan få alvorlige konsekvenser. Falske positiver er kanskje den mest kostbare feilen. Falske positiver refererer til den feilaktige forkastningen av nullhypotesen. Dette fører til sløsing av ressurser, uhensiktsmessig policy og det svekker troverdigheten til vitenskapen [@simmons2011].
 
-## Litteraturgjennomgang 
+## Litteraturgjennomgang
 
 ### Teori og begreper
 
@@ -41,6 +41,12 @@ NSF definerer at ruserbarhet er evnen til å duplisere resultater ved bruk av sa
 @jasny2011b hevder at replikerbarhet regnes som den vitenskaplige gullstandarden, der reproduserbarhet anses som nødvendig men ikke tilstrekkelig forusetning for replikerbarhet. I sammenheng med beregningsvitenskap, diskuterer @peng2011 om reproduserbarhet bør være et minstekrav for pubisering.
 
 Flere har prøvd å definere begrepet reproduserbarhet mer presis. Blant annet har @goodman2016b foreslått å definere begrepet ved å skille mellom metoders reproduserbarhet og resultatenes reproduserbarhet. Metoders reproduserbarhet refererer til tilstrekkelig detaljert metodikk slik at de samme prosedyrene kan gjentas nøyaktig. Reproduserbarhet av resultater innebærer å oppnå like resultater fra en uavhengig studie. @goodman2016b knytter også dette til robusthet som refererer til stabiliteten eksperimentelle konklusjoner når man endrer forutsetninger eller prosedyrer. generaliserbarhet.
+
+### Systematiske problemer
+
+Publikasjonsskjevhet der, sannsynligheten for at en studie publiseres er basert på resultat, er en av hovedårsakene til at ikke-reproduserbare funn vokser i fagliteraturen. Det viser seg å være publisert svært få studier med negative konklusjon der man ikke kan forkaste nullhypotesen.
+
+Ved å benytter signifikant på 5% aksepterer forskere at 1 av 20 studier, helt tilfeldig, vil forkaste nullhypotesen og gi en Type-1 feil. Forskningsverden gjennomfører utallige studier og tester. Det som blir et problemet er at de få studiene som tilfeldigvis oppnår effekt blir publisert i litteraturen, mens studiene som viser manglene effekt blir liggende i arkuvskuffen. Dette beskrev @rosenthal1979 som "File Drawer Problem". Det gjør at literaturen fylles med skjeve utvalg, og dette forplanter seg negativt i det en kaller for metaanslyser [@young2008]
 
 Smarte synspunkt om emnet fra andre.
 
