@@ -17,7 +17,9 @@ format:
 #  pdf:
 #    papersize: a4
 bibliography: reproducibility.bib
-abstract: "Et kort sammendrag, en til to avsnitt."
+
+abstract: "Vitenskapelig fremgang er avhengig av pålitelige og etterprøvbare funn, men en urovekkende andel fagfellevurderte studier lar seg ikke reprodusere. Dette mini-paperet tar utgangspunkt i artikkelen Robust og and Reliable Science og drøfter rammeverket rundt begrepet. Samtidig undersøkes forholdet mellom reproduserbarhet, replikerbarhet og vitenskapelig kvalitet på bakgrunn av replikasjonskrisen.
+Gjennom en gjennomgang av litteratur belyses systemiske problemer som publikasjonsskjevhet og Type 1-feil. Avslutningsvis drøftes det om beregnbare dokumenter i Quarto og verktøy som renv utgjør en tilstrekkelig løsning for å sikre metodisk reproduserbarhet."
 ---
 
 ## Introduksjon
