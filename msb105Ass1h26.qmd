@@ -48,7 +48,7 @@ Publikasjonsskjevhet der, sannsynligheten for at en studie publiseres er basert 
 
 Ved å benytter signifikant på 5% aksepterer forskere at 1 av 20 studier, helt tilfeldig, vil forkaste nullhypotesen og gi en type 1-feil. Forskningsverden gjennomfører utallige studier og tester. Det som blir et problemet er at de få studiene som tilfeldigvis oppnår effekt blir publisert i litteraturen, mens studiene som viser manglene effekt blir liggende i arkuvskuffen. Dette beskrev @rosenthal1979 som "File Drawer Problem". Det gjør at literaturen fylles med skjeve utvalg, noe som forplanter seg negativt i metaanslyser [@young2008]. Derfor har @iyengar1988b drøftet spesifikke teknikker for å håndtere denne skjevheten.
 
-@simmons2011 hevder at falske positiver er den mest kostbare feilen i forskning. Når falske positiver først dukker opp i litteraturen er det vedvarende fordi det er skjeldent at prestisjefylte tidskrifter publiserer nullfunn eller replikasjoner. I tillegg sløser falske positiver med ressurser og uhensiktsmessig policy. Dette fører til at troverdigheten rundt dette fagfeltet svekkes [@simmons2011]. For å motvirke dette har blant annet @nosek2015 argumentert for at tidskrifter må innføre retningslinjer som bidrar til å fremme åpenhet , og økt bruk av forhåndsregistrering. @nosek2018 understreker at forskere må begrunne sitt valg av signifikansnivå, forskningsdesign og strategier i forkant av datainnsamling.
+@simmons2011 hevder at falske positiver er den mest kostbare feilen i forskning. Når falske positiver først dukker opp i litteraturen er det vedvarende fordi det er skjeldent at prestisjefylte tidskrifter publiserer nullfunn eller replikasjoner. I tillegg sløser falske positiver med ressurser og uhensiktsmessig policy. Dette fører til at troverdigheten rundt dette fagfeltet svekkes [@simmons2011]. For å motvirke dette har blant annet @nosek2015 argumentert for at tidskrifter må innføre retningslinjer som bidrar til å fremme åpenhet, og økt bruk av forhåndsregistrering. @nosek2018 understreker at forskere må begrunne sitt valg av signifikansnivå, forskningsdesign og strategier i forkant av datainnsamling.
 
 ### Replikasjonskrisen
 
@@ -87,10 +87,20 @@ Bruk av beregnbare dokumenter gjennom verktøy som Quarto sammen med pakkehåndt
 
 ## Appendiks A
 
-- Versjon nummer og referanse til R pakken brukt i dokumentet
-- R versjon brukt, med referanse
+Dette dokumentet er utarbeidet i RStudio ved hjelp av Qurto.
+
+R.version.string \[1\] "R version 4.6.1 (2026-06-24)" \> citation() To cite R in publications use:
+
+R Core Team (2026). *R: A Language and Environment for Statistical Computing*. R Foundation for Statistical Computing, Vienna, Austria. doi:10.32614/R.manuals <https://doi.org/10.32614/R.manuals>. <https://www.R-project.org/>.
+
+Xie Y (2025). *knitr: A General-Purpose Package for Dynamic Report Generation in R*. R package version 1.51, <https://yihui.org/knitr/>.
+
+Yihui Xie (2015) Dynamic Documents with R and knitr. 2nd edition. Chapman and Hall/CRC. ISBN 978-1498716963
+
+Yihui Xie (2014) knitr: A Comprehensive Tool for Reproducible Research in R. In Victoria Stodden, Friedrich Leisch and Roger D. Peng, editors, Implementing Reproducible Computational Research. Chapman and Hall/CRC. ISBN 978-1466561595
 
 ## Appendiks B
 
-- Hvordan er KI brukt
-- Husk invitasjon til chat
+For å løse denne oppgaven er KI-tjenesten Gemini Notebook (versjon september 2026) benyttet. Verktøyet er brukt til å oppsummere foredraget «Robust and Reliable Science», kvalitetssikre formuleringer og avnitt, samt få veiledning om hvordan jeg referere til R versjonen og R pakkene som er brukt i dokumentet.
+
+Samtalehistorikk er delt via følgende lenke: <https://notebook.google.com/notebook/503e3348-8bf7-4aae-958b-4d0f40635dcb/preview>
