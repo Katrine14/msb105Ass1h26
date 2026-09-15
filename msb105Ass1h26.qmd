@@ -72,11 +72,11 @@ Quarto utgjør en oppdatert og mer robust videreførting av R Markdown og R Note
 
 ### Hvilke problem gjenstår og hvordan kan disse løses?
 
-Ouarto løser problemer knyttet til dokumentasjon og dynamisk rapportering, men spørsmålet er hvor reproduserbart et skript er over tid. Et quarto-dokument alene sikrer ikke fullstendig reproduserbarthet over tid dersom det oppstår endringer i det tilhørende beregningsmiljøet. R-pakker er i stadig utvikling, og endringer i pakkeversjon er en årsak til at eldre skript slutter å fungere. En mulig løsning for dette problemet er å aktivere verktøyet renv. Da vil det bli opprettet et lokalt bibliotek for prosjektet og beholder spesifikke pakkeversjoner som benyttes i prosjektet. Dersom det forsatt er bekymret for maskinvarer og systembiblioteker eller lignende kan docker være en løsning.
+Quarto løser problemer knyttet til dokumentasjon og dynamisk rapportering, men spørsmålet er hvor reproduserbart et skript er over tid. Et quarto-dokument alene sikrer ikke fullstendig reproduserbarthet over tid dersom det oppstår endringer i det tilhørende beregningsmiljøet. R-pakker er i stadig utvikling, og endringer i pakkeversjon er en årsak til at eldre skript slutter å fungere. En mulig løsning for dette problemet er å aktivere verktøyet renv. Da vil det bli opprettet et lokalt bibliotek for prosjektet og beholder spesifikke pakkeversjoner som benyttes i prosjektet. Dersom det forsatt er bekymret for maskinvarer og systembiblioteker eller lignende kan docker være en løsning.
 
 ## Konklusjon
 
-Noen kloke ord.
+Bruk av beregnbare dokumenter gjennom verktøy som Quarto sammen med pakkehåndtering i renv, gir forskerne det som kreves for å sikre metodisk reproduserbarhet. For å løse replikasjonskrisen er imidlertid ikke reproduserbarhet nok alene. For å oppnå robust og pålitelig vitenskap må teknisk reproduserbarhet sammen med mer åpenhet, tydelige retningslinjer og publisering av nullfunn.
 
 ## Referanser
 
