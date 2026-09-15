@@ -70,9 +70,9 @@ Grunntanken med beregningsbare dokumenter (computable documents) er at datainnle
 
 Quarto utgjør en oppdatert og mer robust videreførting av R Markdown og R Notebooks og fungerer som en moderne versjon av den tradisjonelle "computable documents". Ved å benytte pandoc som transformer kan et quarto-dokument konverteres direkte til pdf, html, dock og andre formater. Dette eliminerer manuelle feilkilder ved kopiering av tabeller og tall, og sikrer at analysen kan gjennomføres på nytt i detalj.
 
-Et quarto-dokument alene sikrer ikke fullstendig reproduserbarthet over tid dersom det oppstår endringer i det tilhørende beregningsmiljøet. R-pakker er i stadig utviklign, og endringer i pakkeversjon er en årsak til at eldre skript slutter å fungere. En mulig løsning for dette problemet er å benytte verktøyet renv til prodjektet.
-
 ### Hvilke problem gjenstår og hvordan kan disse løses?
+
+Ouarto løser problemer knyttet til dokumentasjon og dynamisk rapportering, men spørsmålet er hvor reproduserbart et skript er over tid. Et quarto-dokument alene sikrer ikke fullstendig reproduserbarthet over tid dersom det oppstår endringer i det tilhørende beregningsmiljøet. R-pakker er i stadig utvikling, og endringer i pakkeversjon er en årsak til at eldre skript slutter å fungere. En mulig løsning for dette problemet er å aktivere verktøyet renv. Da vil det bli opprettet et lokalt bibliotek for prosjektet og beholder spesifikke pakkeversjoner som benyttes i prosjektet. Dersom det forsatt er bekymret for maskinvarer og systembiblioteker eller lignende kan docker være en løsning.
 
 ## Konklusjon
 
