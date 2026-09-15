@@ -34,7 +34,7 @@ Det er viktig å ha kunnskap om dette temaet ettersom upålitelig forskning kan 
 
 ### Teori og begreper
 
-Robust og pålitelig vitenskap er fundamentet for utviklingen og fremgangen i vitenskapen. Det har være uklarhet rundt hva begrepet faktsik innebærer. National Science Foundation (NSF) følte et behov for å definert "robust og pålitelig vitenskap" gjennom tre krav. Den må være reproduserbar, replikerbar og generaliserbar [@bollen2015].
+Robust og pålitelig vitenskap er fundamentet for utviklingen og fremgangen i vitenskapen. Det har være uklarhet rundt hva begrepet faktsik innebærer. National Science Foundation (NSF) følte et behov for å definert "robust og pålitelig vitenskap" gjennom tre krav. Den må være reproduserbar, replikerbar og generaliserbar.
 
 NSF definerer at ruserbarhet er evnen til å duplisere resultater ved bruk av samme data og prosedyrer. Replikrbarhet innebærer at man oppnå samme konklusjon og resultat ved å bruke samme prosedyrer, men med nye data. Dette regnes som den vitenskaplige gullstandardsen [@jasny2011b]. Generaliserbarhet vil si at resultatene av en studie gjelder i en ny sammenheng, ved bruk av data i annen kontekster eller populasjoner som skiller seg ut fra den orginale studien.
 
@@ -60,9 +60,15 @@ Kriserapportene startet i psykologi, men spredte seg raskt til andre fagfelt. I 
 
 ## Diskusjon av forskningsspørsmålet (problemstillingen)
 
-- Burde replikerbarhet være et krav eller er det å be om for mye?
-- Kan Quarto dokumenter hjelpe med å oppnå reproduserbarhet?
-- Hvilke problem gjenstår og hvordan kan disse løses?
+### Burde replikerbarhet være et krav eller er det å be om for mye?
+
+@peng2011 argumenterte for at reproduserbarhet bør anses som et grunnleggende minstekrav for publisering av beregningsorientert forskning. Dersom forfatteren ikke kan legge frem data og kildekode som gjenskaper de publiserte tabellene, mangler studien metodisk validitet.
+
+Det å kreve full replikerbarhet før publisering kan derimot være for mye å be om. Innsamlig av data kan kreve mye tid og enorme ressurser, det kan i noen tilfeller også være umulig. En studie kan være 100 % reproduserbar, men kan likevel være et resultat av skjevheter i utvalget eller Type 1-feil. Dermed er det ikke garantert at reproduserbare studier har en konklusjon som er sann.
+
+### Kan Quarto dokumenter hjelpe med å oppnå reproduserbarhet?
+
+### Hvilke problem gjenstår og hvordan kan disse løses?
 
 ## Konklusjon
 
