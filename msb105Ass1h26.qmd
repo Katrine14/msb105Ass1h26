@@ -16,8 +16,9 @@ format:
 # krever at tinytex er installert
 #  pdf:
 #    papersize: a4
-bibliography: reproducibility.bib
-
+bibliography: 
+  - reproducibility-kopi.bib
+  - reproducibility.bib
 abstract: "Vitenskapelig fremgang er avhengig av pålitelige og etterprøvbare funn, men en urovekkende andel fagfellevurderte studier lar seg ikke reprodusere. Dette mini-paperet tar utgangspunkt i artikkelen Robust og and Reliable Science og drøfter rammeverket rundt begrepet. Samtidig undersøkes forholdet mellom reproduserbarhet, replikerbarhet og vitenskapelig kvalitet på bakgrunn av replikasjonskrisen.
 Gjennom en gjennomgang av litteratur belyses systemiske problemer som publikasjonsskjevhet og Type 1-feil. Avslutningsvis drøftes det om beregnbare dokumenter i Quarto og verktøy som renv utgjør en tilstrekkelig løsning for å sikre metodisk reproduserbarhet."
 ---
@@ -36,11 +37,11 @@ Det er viktig å ha kunnskap om dette temaet ettersom upålitelig forskning kan 
 
 ### Teori og begreper
 
-Vitenskapelig fremgang er basert på pålitlige oppdagelser [@mcnutt2014]. Robust og pålitelig vitenskap er dermed fundamentet for utviklingen i vitenskapen. Det har likevel vært uklarhet om hva dette begrepet faktsik innebærer. National Science Foundation (NSF) har dermed definert "robust og pålitelig vitenskap" gjennom tre krav, den må være reproduserbar, replikerbar og generaliserbar.
+Vitenskapelig fremgang er basert på pålitlige oppdagelser [@mcnutt2014]. Robust og pålitelig vitenskap er dermed fundamentet for utviklingen i vitenskapen. Det har likevel vært uklarhet om hva dette begrepet faktsik innebærer. National Science Foundation (NSF) har dermed definert "robust og pålitelig vitenskap" gjennom tre krav, den må være reproduserbar, replikerbar og generaliserbar [@bollen_social_2015].
 
 NSF definerer reproduserbarhet som evnen til å duplisere resultater ved bruk av samme data og prosedyrer. Replikerbarhet innebærer at man oppnå samme konklusjon og resultat ved å bruke samme prosedyrer, men med nye data. @jasny2011b hevder at replikerbarhet regnes som den vitenskaplige gullstandarden, der reproduserbarhet anses som nødvendig, men ikke tilstrekkelig forusetning for replikerbarhet. Generaliserbarhet vil si at resultatene av en studie gjelder i en ny sammenheng, ved bruk av data i annen kontekster eller populasjoner som skiller seg ut fra den orginale studien. I sammenheng med beregningsvitenskap, diskuterer @peng2011 om teknisk reproduserbarhet bør være et minstekrav for pubisering.
 
-Flere har prøvd å definere begrepet reproduserbarhet mer presis. Blant annet har @goodman2016b foreslått å definere begrepet ved å skille mellom metoders reproduserbarhet og resultatenes reproduserbarhet. Metoders reproduserbarhet refererer til tilstrekkelig detaljert metodikk slik at de samme prosedyrene kan gjentas nøyaktig. Reproduserbarhet av resultater innebærer å oppnå like resultater fra en uavhengig studie. @goodman2016b knytter også dette til robusthet som refererer til stabiliteten eksperimentelle konklusjoner ved variasjon i forutsetninger eller prosedyrer. For at reproduserbarhet skal kunne etterprøves i praksis, fremhever @piwowar2018 at fri tilgang til data, publikasjoner og kjeldekode gjennom åpen vitenskap er en nødvendlig forutsetning.
+Flere har prøvd å definere begrepet reproduserbarhet mer presis. Blant annet har @goodman2016b foreslått å definere begrepet ved å skille mellom metoders reproduserbarhet og resultatenes reproduserbarhet. Metoders reproduserbarhet refererer til tilstrekkelig detaljert metodikk slik at de samme prosedyrene kan gjentas nøyaktig. Reproduserbarhet av resultater innebærer å oppnå like resultater fra en uavhengig studie. @goodman2016b knytter også dette til robusthet som refererer til stabiliteten eksperimentelle konklusjoner ved variasjon i forutsetninger eller prosedyrer. For at reproduserbarhet skal kunne etterprøves i praksis, fremhever @piwowar2018 at fri tilgang til data, publikasjoner og kjeldekode gjennom åpen vitenskap er en nødvendlig forutsetning. I tillegg argumentere @lakens_calculating_2013
 
 ### Systematiske problemer
 
@@ -48,7 +49,7 @@ Publikasjonsskjevhet der, sannsynligheten for at en studie publiseres er basert 
 
 Ved å benytter signifikant på 5% aksepterer forskere at 1 av 20 studier, helt tilfeldig, vil forkaste nullhypotesen og gi en type 1-feil. Forskningsverden gjennomfører utallige studier og tester. Det som blir et problemet er at de få studiene som tilfeldigvis oppnår effekt blir publisert i litteraturen, mens studiene som viser manglene effekt blir liggende i arkuvskuffen. Dette beskrev @rosenthal1979 som "File Drawer Problem". Det gjør at literaturen fylles med skjeve utvalg, noe som forplanter seg negativt i metaanslyser [@young2008]. Derfor har @iyengar1988b drøftet spesifikke teknikker for å håndtere denne skjevheten.
 
-@simmons2011 hevder at falske positiver er den mest kostbare feilen i forskning. Når falske positiver først dukker opp i litteraturen er det vedvarende fordi det er skjeldent at prestisjefylte tidskrifter publiserer nullfunn eller replikasjoner. I tillegg sløser falske positiver med ressurser og uhensiktsmessig policy. Dette fører til at troverdigheten rundt dette fagfeltet svekkes [@simmons2011]. For å motvirke dette har blant annet @nosek2015 argumentert for at tidskrifter må innføre retningslinjer som bidrar til å fremme åpenhet, og økt bruk av forhåndsregistrering. @nosek2018 understreker at forskere må begrunne sitt valg av signifikansnivå, forskningsdesign og strategier i forkant av datainnsamling.
+@simmons2011 hevder at falske positiver er den mest kostbare feilen i forskning. Når falske positiver først dukker opp i litteraturen er det vedvarende fordi det er skjeldent at prestisjefylte tidskrifter publiserer nullfunn eller replikasjoner. I tillegg sløser falske positiver med ressurser og uhensiktsmessig policy. Dette fører til at troverdigheten rundt dette fagfeltet svekkes [@simmons2011]. For å motvirke dette har blant annet @nosek2015 argumentert for at tidskrifter må innføre retningslinjer som bidrar til å fremme åpenhet, og økt bruk av forhåndsregistrering. @nosek_preregistration_2018 understreker at forskere må begrunne sitt valg av signifikansnivå, forskningsdesign og strategier i forkant av datainnsamling.
 
 ### Replikasjonskrisen
 
@@ -56,7 +57,7 @@ Replikasjonskrisen refererer til den økende bekymrignen i vitenskapsverden om a
 
 Kriserapportene startet i psykologi, men spredte seg raskt til andre fagfelt. I økonomifaget avdekket JMCB-prosjektet at det bare var mulig å oppnå full reproduserbarhet i 2 av over 70 produserte artikkler, når forfatterne brukte egne datasett. Hovedgrunnen var feil i kildekode, manglende data og utilstrekkelig dokumentasjon. @mccullough2008a argumenterte for at krav om dataarkiv i seg selv sjelden er nok til å sikre reproduserbar forskning.
 
-@mar viser hvordan skript, rådata og rapporter kan samles inn i et dynamisk "research compendium" i R slik at reproduserbarhet kan gjennomføres i praksis. Som et konkret eksempel på bruk av åpen offentlige data og reproduserbare modeller i datavitenskap benytter ..... inspeksonsdata fra APHIS med ca. 2,7 millioner forsendelser for å estimere logit-modeller for invasiv risiko.
+@marwick_packaging_2018 viser hvordan skript, rådata og rapporter kan samles inn i et dynamisk "research compendium" i R slik at reproduserbarhet kan gjennomføres i praksis. Som et konkret eksempel på bruk av åpen offentlige data og reproduserbare modeller i datavitenskap benytter @lichtenberg_fruit_2018 inspeksonsdata fra APHIS med ca. 2,7 millioner forsendelser for å estimere logit-modeller for invasiv risiko.
 
 ## Diskusjon av forskningsspørsmålet (problemstillingen)
 
