@@ -16,70 +16,125 @@ format:
 # krever at tinytex er installert
 #  pdf:
 #    papersize: a4
-bibliography: 
-  - reproducibility-kopi.bib
-  - reproducibility.bib
-abstract: "Vitenskapelig fremgang er avhengig av pålitelige og etterprøvbare funn, men en urovekkende andel fagfellevurderte studier lar seg ikke reprodusere. Dette mini-paperet tar utgangspunkt i artikkelen Robust og and Reliable Science og drøfter rammeverket rundt begrepet. Samtidig undersøkes forholdet mellom reproduserbarhet, replikerbarhet og vitenskapelig kvalitet på bakgrunn av replikasjonskrisen.
+bibliography: [reproducibility-kopi.bib, reproducibility.bib, ag.bib]
+abstract: "Vitenskapelig fremgang er avhengig av pålitelige og etterprøvbare funn, men en urovekkende andel fagfellevurderte studier lar seg ikke reprodusere. Dette mini-paperet tar utgangspunkt i artikkelen *Robust og and Reliable Science* og drøfter rammeverket rundt begrepet. Samtidig undersøkes forholdet mellom reproduserbarhet, replikerbarhet og vitenskapelig kvalitet på bakgrunn av replikasjonskrisen.
 Gjennom en gjennomgang av litteratur belyses systemiske problemer som publikasjonsskjevhet og Type 1-feil. Avslutningsvis drøftes det om beregnbare dokumenter i Quarto og verktøy som renv utgjør en tilstrekkelig løsning for å sikre metodisk reproduserbarhet."
 ---
 
 ## Introduksjon
 
-Vitenskapelig fremgang er basert på pålitelige oppdagelser, samt tillit. For å kunne bygge videre på tidligere arbeid er det viktig at undersøkelser er gjennomført med høy metodisk kvalitet og at resultatene er etterrøvbare. For å oppnå tillit til vitenskapelige konkusjoner er det å kunne gjennskape et eksperiment en viktig tilnærming. Likevel har forskningsverden blitt svekket av rapporter som nylig har oppdaget at en urovekkende andel av fagfellevurderte studier ikke lar seg reprodusere [@mcnutt2014].
+Vitenskapelig fremgang er basert på pålitelige oppdagelser, samt tillit.
+For å kunne bygge videre på tidligere arbeid er det viktig at undersøkelser er gjennomført med høy metodisk kvalitet og at resultatene er etterrøvbare.
+For å oppnå tillit til vitenskapelige konkusjoner er det å kunne gjennskape et eksperiment en viktig tilnærming.
+Likevel har forskningsverden blitt svekket av rapporter som nylig har oppdaget at en urovekkende andel av fagfellevurderte studier ikke lar seg reprodusere [@mcnutt2014].
 
-Denne artikkelen undersøker om reproduserbarhet bør være et minimimskrav for publisering [@peng2011] eller om forskningsfelleskapet må kreve full replikerbarhet. Artikkelen tar utgangspunkt i National Science Foundation (NSF) som definerer robust og pålitelig vitenskap gjennom tre begreper - reproduserbarhet, replikerbarhet og generaliserbarhet. Videre kommer @goodman2016b med en mer pressis forklaring på reproduserbarhet, ved å skille mellom metoders reproduserbarhet og resultatenes reproduserbarhet.
+Denne artikkelen undersøker om reproduserbarhet bør være et minimimskrav for publisering [@peng2011] eller om forskningsfelleskapet må kreve full replikerbarhet.
+Artikkelen tar utgangspunkt i @nsf2019 som definerer robust og pålitelig vitenskap gjennom tre begreper - reproduserbarhet, replikerbarhet og generaliserbarhet.
+Videre kommer @goodman2016b med en mer presis forklaring på reproduserbarhet, ved å skille mellom metoders reproduserbarhet og resultatenes reproduserbarhet. 
+De diskuterer utfordringene knyttet til replikerbarhet og reproduserbarhet, med publikasjonsskjeivhet og type 1-feil (falske positiver) som hovedfokus.
+Det redegjøres for ulike tilnærminger som kan bidra til å håndtere og løse replikasjonskrisen.
+Avslutningsvis drøftes det hvordan moderne verktøy kan hjelpe til å sikre metodisk reproduserbarhet.
 
-Artikkelen diskuterer utfordringene knyttet til replikerbarhet og reproduserbarhet, med publikasjonsskjeivhet og type 1-feil (falske positiver) som hovedfokus. Det redegjøres for ulike tilnærminger som kan bidra til å håndtere og løse replikasjonskrisen. Avslutningsvis drøftes det hvordan moderne verktøy kan hjelpe til å sikre metodisk reproduserbarhet.
-
-Det er viktig å ha kunnskap om dette temaet ettersom upålitelig forskning kan få alvorlige konsekvenser. Falske positiver er kanskje den mest kostbare feilen. Falske positiver refererer til den feilaktige forkastningen av nullhypotesen. Dette fører til sløsing av ressurser, uhensiktsmessig policy og det svekker troverdigheten til vitenskapen [@simmons2011].
+Det er viktig å ha kunnskap om dette temaet ettersom upålitelig forskning kan få alvorlige konsekvenser.
+Falske positiver er kanskje den mest kostbare feilen.
+Falske positiver refererer til den feilaktige forkastningen av nullhypotesen.
+Dette fører til sløsing av ressurser, uhensiktsmessig policy og det svekker troverdigheten til vitenskapen [@simmons2011].
 
 ## Litteraturgjennomgang
 
 ### Teori og begreper
 
-Vitenskapelig fremgang er basert på pålitlige oppdagelser [@mcnutt2014]. Robust og pålitelig vitenskap er dermed fundamentet for utviklingen i vitenskapen. Det har likevel vært uklarhet om hva dette begrepet faktsik innebærer. National Science Foundation (NSF) har dermed definert "robust og pålitelig vitenskap" gjennom tre krav, den må være reproduserbar, replikerbar og generaliserbar [@bollen_social_2015].
+Vitenskapelig fremgang er basert på pålitlige oppdagelser [@mcnutt2014].
+Robust og pålitelig vitenskap er dermed fundamentet for utviklingen i vitenskapen.
+Det har likevel vært uklarhet om hva dette begrepet faktsik innebærer.
+National Science Foundation (NSF) har dermed definert "robust og pålitelig vitenskap" gjennom tre krav, den må være reproduserbar, replikerbar og generaliserbar [@bollen_social_2015].
 
-NSF definerer reproduserbarhet som evnen til å duplisere resultater ved bruk av samme data og prosedyrer. Replikerbarhet innebærer at man oppnå samme konklusjon og resultat ved å bruke samme prosedyrer, men med nye data. @jasny2011b hevder at replikerbarhet regnes som den vitenskaplige gullstandarden, der reproduserbarhet anses som nødvendig, men ikke tilstrekkelig forusetning for replikerbarhet. Generaliserbarhet vil si at resultatene av en studie gjelder i en ny sammenheng, ved bruk av data i annen kontekster eller populasjoner som skiller seg ut fra den orginale studien. I sammenheng med beregningsvitenskap, diskuterer @peng2011 om teknisk reproduserbarhet bør være et minstekrav for pubisering.
+NSF definerer reproduserbarhet som evnen til å duplisere resultater ved bruk av samme data og prosedyrer.
+Replikerbarhet innebærer at man oppnår samme konklusjon og resultat ved å bruke samme prosedyrer, men med nye data.
+@jasny2011b hevder at replikerbarhet regnes som den vitenskaplige gullstandarden, der reproduserbarhet anses som nødvendig, men ikke tilstrekkelig forusetning for replikerbarhet.
+Generaliserbarhet vil si at resultatene av en studie gjelder i en ny sammenheng, ved bruk av data i annen kontekster eller populasjoner som skiller seg ut fra den orginale studien.
+I sammenheng med beregningsvitenskap, diskuterer @peng2011 om teknisk reproduserbarhet bør være et minstekrav for pubisering.
 
-Flere har prøvd å definere begrepet reproduserbarhet mer presis. Blant annet har @goodman2016b foreslått å definere begrepet ved å skille mellom metoders reproduserbarhet og resultatenes reproduserbarhet. Metoders reproduserbarhet refererer til tilstrekkelig detaljert metodikk slik at de samme prosedyrene kan gjentas nøyaktig. Reproduserbarhet av resultater innebærer å oppnå like resultater fra en uavhengig studie. @goodman2016b knytter også dette til robusthet som refererer til stabiliteten eksperimentelle konklusjoner ved variasjon i forutsetninger eller prosedyrer. For at reproduserbarhet skal kunne etterprøves i praksis, fremhever @piwowar2018 at fri tilgang til data, publikasjoner og kjeldekode gjennom åpen vitenskap er en nødvendlig forutsetning. I tillegg argumentere @lakens_calculating_2013
+Flere har prøvd å definere begrepet reproduserbarhet mer presis.
+Blant annet har @goodman2016b foreslått å definere begrepet ved å skille mellom metoders reproduserbarhet og resultatenes reproduserbarhet.
+Metoders reproduserbarhet refererer til tilstrekkelig detaljert metodikk slik at de samme prosedyrene kan gjentas nøyaktig.
+Reproduserbarhet av resultater innebærer å oppnå like resultater fra en uavhengig studie.
+@goodman2016b knytter også dette til robusthet som refererer til stabiliteten eksperimentelle konklusjoner ved variasjon i forutsetninger eller prosedyrer.
+For at reproduserbarhet skal kunne etterprøves i praksis, fremhever @piwowar2018 at fri tilgang til data, publikasjoner og kildekode gjennom åpen vitenskap er en nødvendig forutsetning.
 
 ### Systematiske problemer
 
-Publikasjonsskjevhet der, sannsynligheten for at en studie publiseres er basert på resultat, er en av hovedårsakene til at ikke-reproduserbare funn vokser i fagliteraturen. Det viser seg å være publisert svært få studier med negative konklusjon der man ikke kan forkaste nullhypotesen .
+Publikasjonsskjevhet der, sannsynligheten for at en studie publiseres er basert på resultat, er en av hovedårsakene til at ikke-reproduserbare funn vokser i fagliteraturen.
+Det viser seg å være publisert svært få studier med negative konklusjon der man ikke kan forkaste nullhypotesen .
 
-Ved å benytter signifikant på 5% aksepterer forskere at 1 av 20 studier, helt tilfeldig, vil forkaste nullhypotesen og gi en type 1-feil. Forskningsverden gjennomfører utallige studier og tester. Det som blir et problemet er at de få studiene som tilfeldigvis oppnår effekt blir publisert i litteraturen, mens studiene som viser manglene effekt blir liggende i arkuvskuffen. Dette beskrev @rosenthal1979 som "File Drawer Problem". Det gjør at literaturen fylles med skjeve utvalg, noe som forplanter seg negativt i metaanslyser [@young2008]. Derfor har @iyengar1988b drøftet spesifikke teknikker for å håndtere denne skjevheten.
+Ved å benytter signifikant på 5% aksepterer forskere at 1 av 20 studier, helt tilfeldig, vil forkaste nullhypotesen og gi en type 1-feil.
+Forskningsverden gjennomfører utallige studier og tester.
+Det som blir et problemet er at de få studiene som tilfeldigvis oppnår effekt blir publisert i litteraturen, mens studiene som viser manglene effekt blir liggende i arkuvskuffen.
+Dette beskrev @rosenthal1979 som "File Drawer Problem".
+Det gjør at literaturen fylles med skjeve utvalg, noe som forplanter seg negativt i metaanslyser [@young2008].
+Derfor har @iyengar1988b drøftet spesifikke teknikker for å håndtere denne skjevheten.
 
-@simmons2011 hevder at falske positiver er den mest kostbare feilen i forskning. Når falske positiver først dukker opp i litteraturen er det vedvarende fordi det er skjeldent at prestisjefylte tidskrifter publiserer nullfunn eller replikasjoner. I tillegg sløser falske positiver med ressurser og uhensiktsmessig policy. Dette fører til at troverdigheten rundt dette fagfeltet svekkes [@simmons2011]. For å motvirke dette har blant annet @nosek2015 argumentert for at tidskrifter må innføre retningslinjer som bidrar til å fremme åpenhet, og økt bruk av forhåndsregistrering. @nosek_preregistration_2018 understreker at forskere må begrunne sitt valg av signifikansnivå, forskningsdesign og strategier i forkant av datainnsamling.
+@simmons2011 hevder at falske positiver er den mest kostbare feilen i forskning.
+Når falske positiver først dukker opp i litteraturen er det vedvarende fordi det er skjeldent at prestisjefylte tidskrifter publiserer nullfunn eller replikasjoner.
+I tillegg sløser falske positiver med ressurser og uhensiktsmessig policy.
+Dette fører til at troverdigheten rundt dette fagfeltet svekkes [@simmons2011].
+For å motvirke dette har blant annet @nosek2015 argumentert for at tidskrifter må innføre retningslinjer som bidrar til å fremme åpenhet, og økt bruk av forhåndsregistrering.
+@nosek_preregistration_2018 understreker at forskere må begrunne sitt valg av signifikansnivå, forskningsdesign og strategier i forkant av datainnsamling.
 
 ### Replikasjonskrisen
 
-Replikasjonskrisen refererer til den økende bekymrignen i vitenskapsverden om at en urovekkende andel av fagfellevurderte studier ikke lar seg gjennskape når uvhengige forskere forsøker å gjenta disse. Replikasjonskrisen sartet inne psykologi, men spredte seg til andre fagfeil innenfor vitenskapen. @ioannidis2005b viste teoretisk at de fleste publiserte forskningsfunn kan være falske. @nosek2015 organiserte et omfattende prosjekt som underbygget dette. Prosjektet gitt ut på at forskere prøvde å replikere 100 studier fra . Resultatet viste at selv om 97% av de opprinnelige studiene hadde signifikante funn, var det bare 36% av replikasjonsforsøkene som klarte å oppnå samme resultat. I oppfølgingsstudien "Many labs 2" fant @klein2018b at bare 15 av 28 klassiske studier, det vil si omtrent 54%, var lot seg replikere.
+Replikasjonskrisen refererer til den økende bekymringen i vitenskapsverden om at en urovekkende andel av fagfellevurderte studier ikke lar seg gjennskape når uvhengige forskere forsøker å gjenta disse.
+Replikasjonskrisen startet inne psykologi, men spredte seg til andre fagfeil innenfor vitenskapen.
+@ioannidis2005b viste teoretisk at de fleste publiserte forskningsfunn kan være falske.
+@nosek2015 organiserte et omfattende prosjekt som underbygget dette.
+Prosjektet gitt ut på at forskere prøvde å replikere 100 studier innen psykologi .
+Resultatet viste at selv om 97% av de opprinnelige studiene hadde signifikante funn, var det bare 36% av replikasjonsforsøkene som klarte å oppnå samme resultat.
+I oppfølgingsstudien "Many labs 2" fant @klein2018b at bare 15 av 28 klassiske studier, det vil si omtrent 54%, lot seg replikere.
 
-Kriserapportene startet i psykologi, men spredte seg raskt til andre fagfelt. I økonomifaget avdekket JMCB-prosjektet at det bare var mulig å oppnå full reproduserbarhet i 2 av over 70 produserte artikkler, når forfatterne brukte egne datasett. Hovedgrunnen var feil i kildekode, manglende data og utilstrekkelig dokumentasjon. @mccullough2008a argumenterte for at krav om dataarkiv i seg selv sjelden er nok til å sikre reproduserbar forskning.
+Kriserapportene startet i psykologi, men spredte seg raskt til andre fagfelt.
+I økonomifaget avdekket JMCB-prosjektet at det bare var mulig å oppnå full reproduserbarhet i 2 av over 70 produserte artikkler, når forfatterne brukte egne datasett [dewald1986].
+Hovedgrunnen var feil i kildekode, manglende data og utilstrekkelig dokumentasjon.
+@mccullough2008a argumenterte for at krav om dataarkiv i seg selv sjelden er nok til å sikre reproduserbar forskning.
 
-@marwick_packaging_2018 viser hvordan skript, rådata og rapporter kan samles inn i et dynamisk "research compendium" i R slik at reproduserbarhet kan gjennomføres i praksis. Som et konkret eksempel på bruk av åpen offentlige data og reproduserbare modeller i datavitenskap benytter @lichtenberg_fruit_2018 inspeksonsdata fra APHIS med ca. 2,7 millioner forsendelser for å estimere logit-modeller for invasiv risiko.
+@marwick_packaging_2018 viser hvordan skript, rådata og rapporter kan samles inn i et dynamisk "research compendium" i R slik at reproduserbarhet kan gjennomføres i praksis.
+Som et konkret eksempel på bruk av åpen offentlige data og reproduserbare modeller i datavitenskap benytter @lichtenberg_fruit_2018 inspeksonsdata fra APHIS med ca.
+2,7 millioner forsendelser for å estimere logit-modeller for invasiv risiko.
 
 ## Diskusjon av forskningsspørsmålet (problemstillingen)
 
 ### Burde replikerbarhet være et krav eller er det å be om for mye?
 
-@peng2011 argumenterte for at reproduserbarhet bør anses som et grunnleggende minstekrav for publisering av beregningsorientert forskning. Dersom forfatteren ikke kan legge frem data og kildekode som gjenskaper de publiserte tabellene, mangler studien metodisk validitet.
+@peng2011 argumenterte for at reproduserbarhet bør anses som et grunnleggende minstekrav for publisering av beregningsorientert forskning.
+Dersom forfatteren ikke kan legge frem data og kildekode som gjenskaper de publiserte tabellene, mangler studien metodisk validitet.
 
-Det å kreve full replikerbarhet før publisering kan derimot være for mye å be om. Innsamlig av data kan kreve mye tid og enorme ressurser, det kan i noen tilfeller også være umulig. En studie kan være 100 % reproduserbar, men kan likevel være et resultat av skjevheter i utvalget eller Type 1-feil. Dermed er det ikke garantert at reproduserbare studier har en konklusjon som er sann.
+Det å kreve full replikerbarhet før publisering kan derimot være for mye å be om.
+Innsamlig av data kan kreve mye tid og enorme ressurser, det kan i noen tilfeller også være umulig.
+En studie kan være 100 % reproduserbar, men kan likevel være et resultat av skjevheter i utvalget eller Type 1-feil.
+Dermed er det ikke garantert at reproduserbare studier har en konklusjon som er sann.
 
 ### Kan Quarto dokumenter hjelpe med å oppnå reproduserbarhet?
 
-Grunntanken med beregningsbare dokumenter (computable documents) er at datainnlesingen, teksten, modellskriptene og resultatgenerering samles i én og same kildefil. Dette er en eldre idé som blant annet bygger på Donald E. Knuth prinsipper om "literate programming" [@knuth1984b] og @gentleman2003 sitt begrep "compendium", som viser til en beholder som kobler data, kode og tekst sammen i et dynamisk dokument.
+Grunntanken med beregningsbare dokumenter (computable documents) er at datainnlesingen, teksten, modellskriptene og resultatgenereringen samles i én og same kildefil.
+Dette er en eldre idé som blant annet bygger på Donald E. Knuth prinsipper om "literate programming" [@knuth1984b] og @gentleman2003 sitt begrep "compendium", som viser til en beholder som kobler data, kode og tekst sammen i et dynamisk dokument.
 
-Quarto utgjør en oppdatert og mer robust videreførting av R Markdown og R Notebooks og fungerer som en moderne versjon av den tradisjonelle "computable documents". Ved å benytte pandoc som transformer kan et quarto-dokument konverteres direkte til pdf, html, dock og andre formater. Dette eliminerer manuelle feilkilder ved kopiering av tabeller og tall, og sikrer at analysen kan gjennomføres på nytt i detalj.
+Quarto, [@Allaire_Quarto_2026], utgjør en oppdatert og mer robust videreførting av R Markdown og R Notebooks og fungerer som en moderne versjon av den tradisjonelle "computable documents".
+Ved å benytte pandoc som transformer kan et quarto-dokument konverteres direkte til pdf, html, dock og andre formater.
+Dette eliminerer manuelle feilkilder ved kopiering av tabeller og tall, og sikrer at analysen kan gjennomføres på nytt i detalj.
 
 ### Hvilke problem gjenstår og hvordan kan disse løses?
 
-Quarto løser problemer knyttet til dokumentasjon og dynamisk rapportering, men spørsmålet er hvor reproduserbart et skript er over tid. Et quarto-dokument alene sikrer ikke fullstendig reproduserbarthet over tid dersom det oppstår endringer i det tilhørende beregningsmiljøet. R-pakker er i stadig utvikling, og endringer i pakkeversjon er en årsak til at eldre skript slutter å fungere. En mulig løsning for dette problemet er å aktivere verktøyet renv. Da vil det bli opprettet et lokalt bibliotek for prosjektet og beholder spesifikke pakkeversjoner som benyttes i prosjektet. Dersom det forsatt er bekymret for maskinvarer og systembiblioteker eller lignende kan docker være en løsning.
+Quarto løser problemer knyttet til dokumentasjon og dynamisk rapportering, men spørsmålet er hvor reproduserbart et skript er over tid.
+Et quarto-dokument alene sikrer ikke fullstendig reproduserbarthet over tid dersom det oppstår endringer i det tilhørende beregningsmiljøet.
+R-pakker er i stadig utvikling, og endringer i pakkeversjon er en årsak til at eldre skript slutter å fungere.
+En mulig løsning for dette problemet er å aktivere verktøyet `renv` [@wickham2026].
+Da vil det bli opprettet et lokalt bibliotek for prosjektet og beholder spesifikke pakkeversjoner som benyttes i prosjektet.
+Dersom det forsatt er bekymret for maskinvarer og systembiblioteker eller lignende kan docker være en løsning.
 
 ## Konklusjon
 
-Bruk av beregnbare dokumenter gjennom verktøy som Quarto sammen med pakkehåndtering i renv, gir forskerne det som kreves for å sikre metodisk reproduserbarhet. For å løse replikasjonskrisen er imidlertid ikke reproduserbarhet nok alene. For å oppnå robust og pålitelig vitenskap må teknisk reproduserbarhet sammen med mer åpenhet, tydelige retningslinjer og publisering av nullfunn.
+Bruk av beregnbare dokumenter gjennom verktøy som Quarto sammen med pakkehåndtering i renv, gir forskerne det som kreves for å sikre metodisk reproduserbarhet.
+For å løse replikasjonskrisen er imidlertid ikke reproduserbarhet nok alene.
+For å oppnå robust og pålitelig vitenskap må teknisk reproduserbarhet sammen med mer åpenhet, tydelige retningslinjer og publisering av nullfunn.
 
 ## Referanser
 
@@ -88,20 +143,11 @@ Bruk av beregnbare dokumenter gjennom verktøy som Quarto sammen med pakkehåndt
 
 ## Appendiks A
 
-Dette dokumentet er utarbeidet i RStudio ved hjelp av Qurto.
-
-R.version.string \[1\] "R version 4.6.1 (2026-06-24)" \> citation() To cite R in publications use:
-
-R Core Team (2026). *R: A Language and Environment for Statistical Computing*. R Foundation for Statistical Computing, Vienna, Austria. doi:10.32614/R.manuals <https://doi.org/10.32614/R.manuals>. <https://www.R-project.org/>.
-
-Xie Y (2025). *knitr: A General-Purpose Package for Dynamic Report Generation in R*. R package version 1.51, <https://yihui.org/knitr/>.
-
-Yihui Xie (2015) Dynamic Documents with R and knitr. 2nd edition. Chapman and Hall/CRC. ISBN 978-1498716963
-
-Yihui Xie (2014) knitr: A Comprehensive Tool for Reproducible Research in R. In Victoria Stodden, Friedrich Leisch and Roger D. Peng, editors, Implementing Reproducible Computational Research. Chapman and Hall/CRC. ISBN 978-1466561595
+Dette dokumentet er utarbeidet i RStudio 2026.09.0+174  [@rstudio2026] ved hjelp av Quarto 1.8.25 [@Allaire_Quarto_2026] vha. R versjon 4.6.1 (2026-06-24) [@r_core]. En viktig pakke for å generere ulike endelige format er `knitr` [@xie2014; @xie2015; @xie2025].
 
 ## Appendiks B
 
-For å løse denne oppgaven er KI-tjenesten Gemini Notebook (versjon september 2026) benyttet. Verktøyet er brukt til å oppsummere foredraget «Robust and Reliable Science», kvalitetssikre formuleringer og avnitt, samt få veiledning om hvordan jeg referere til R versjonen og R pakkene som er brukt i dokumentet.
+For å løse denne oppgaven er KI-tjenesten Gemini Notebook (versjon september 2026) benyttet.
+Verktøyet er brukt til å oppsummere foredraget «Robust and Reliable Science», kvalitetssikre formuleringer og avnitt, samt få veiledning om hvordan jeg referere til R versjonen og R pakkene som er brukt i dokumentet.
 
 Samtalehistorikk er delt via følgende lenke: <https://notebook.google.com/notebook/503e3348-8bf7-4aae-958b-4d0f40635dcb/preview>
